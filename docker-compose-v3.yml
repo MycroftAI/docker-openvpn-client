@@ -1,0 +1,9 @@
+---
+version: "3.3"
+services:
+        vpn-00:
+                image: test
+                cap_add:
+                        - NET_ADMIN
+                devices:
+                        - /dev/net/tun:/dev/net/tun
